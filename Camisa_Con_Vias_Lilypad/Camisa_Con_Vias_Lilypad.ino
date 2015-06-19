@@ -81,7 +81,15 @@ void actualizarLeds() {
   //(se encienden periodicamente) y si el led correspondiente
   //esta habilitado
   digitalWrite(pinLedIzq,  ledIzq && ledsActivos);
+  delay(1);
+  digitalWrite(pinLedIzq,  LOW);
   digitalWrite(pinLedDer,  ledDer && ledsActivos);
+  delay(1);
+  digitalWrite(pinLedDer, LOW);
   digitalWrite(pinLedCen1, ledCen && ledsActivos);
+  delay(1);
+  digitalWrite(pinLedCen1, LOW);
   digitalWrite(pinLedCen2, ledCen && ledsActivos);
+  delay(1);
+  digitalWrite(pinLedCen2, LOW);
 }
